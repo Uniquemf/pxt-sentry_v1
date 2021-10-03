@@ -6,8 +6,8 @@ namespace Sentry {
  */
     //% blockId=Sentry_begin block="initialize%id|port%port"
     //% group="Settings"
-    export function begin(id: SentryId, port: sentry_mode_e) {
-
+    export function Sentrybegin(id: SentryId, port: sentry_mode_e) {
+        Sentry.begin(id,port);
     }
 
     /**
@@ -15,7 +15,7 @@ namespace Sentry {
      */
     //% blockId=Sentry_set_default block="%id|restore default settings"
     //% group="Settings"
-    export function setDefault(id:SentryId ) {
+    export function SentrysetDefault(id:SentryId ) {
 
     }
 
@@ -24,7 +24,7 @@ namespace Sentry {
  */
     //% blockId=Sentry_vision_begin block="%id|%enable|algorithm%type"
     //% group="Settings"
-    export function visionBegin(id: SentryId, status: SentryStatus, type: sentry_vision_e) {
+    export function SentryvisionBegin(id: SentryId, status: SentryStatus, type: sentry_vision_e) {
 
     }
 
@@ -38,7 +38,7 @@ namespace Sentry {
     //% blockId=Sentry_led_set_color block="%id|LED %led|when detected %detected_color|when undetected %undetected_color"
     //% weight=200 inlineInputMode=inline
     //% group="Settings" advanced=true
-    export function ledSetColor(id: SentryId, led: sentry_led_e, detected_color: sentry_led_color_e, undetected_color: sentry_led_color_e) {
+    export function SentryledSetColor(id: SentryId, led: sentry_led_e, detected_color: sentry_led_color_e, undetected_color: sentry_led_color_e) {
 
     }
 
@@ -49,7 +49,7 @@ namespace Sentry {
      */
     //% blockId=Sentry_camera_set_zoom block="%id|digital zoom%level"
     //% group="Settings" advanced=true
-    export function cameraSetZoom(id: SentryId, zoom: sentry_camera_zoom_e) {
+    export function SentrycameraSetZoom(id: SentryId, zoom: sentry_camera_zoom_e) {
 
     }
 
@@ -60,7 +60,7 @@ namespace Sentry {
 */
     //% blockId=Sentry_camera_set_awb block="%id|white balance%wb"
     //% group="Settings" advanced=true
-    export function cameraSetAwb(id: SentryId, wb: sentry_camera_white_balance_e) {
+    export function SentrycameraSetAwb(id: SentryId, wb: sentry_camera_white_balance_e) {
 
     }
 
@@ -72,7 +72,7 @@ namespace Sentry {
     //% blockId=Sentry_camera_set_fps block="%id|high FPS mode$on"
     //% on.shadow="toggleOnOff" on.defl="true"
     //% group="Settings" advanced=true
-    export function cameraSetFPS(id: SentryId, on: boolean) {
+    export function SentrycameraSetFPS(id: SentryId, on: boolean) {
 
     }
 
@@ -83,7 +83,7 @@ namespace Sentry {
 * @param object_inf:  object information
 */
     //% blockId=Sentry_get_value
-    export function getValue(id: SentryId, vision_type: sentry_vision_e, object_inf: sentry_obj_info_e) {
+    export function SentrygetValue(id: SentryId, vision_type: sentry_vision_e, object_inf: sentry_obj_info_e) {
 
     }
 
