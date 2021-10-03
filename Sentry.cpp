@@ -27,7 +27,7 @@ namespace sentry {
      * Initialize Sentry.
      */
 
-    void begin(SentryId id, SentryVsMode port) {
+    void begin(SentryId id, sentry_mode_e port) {
         if (!pSentry[id]) {
             pSentry[id] = new Sentry(0x60+id);
         }
@@ -104,6 +104,6 @@ namespace sentry {
      * @param object_inf:  object information
     */
     int getValue(SentryId id, sentry_vision_e vision_type, sentry_obj_info_e object_inf) {
-        return pSentry[id]->GetValue((SentryVisionType)visionTypeEnumToMacro(vision_type), object_inf);
+        return pSentry[id]->GetValue(vision_type, object_inf);
     }
 }
