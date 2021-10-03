@@ -17,7 +17,7 @@
 
 #include <pxt.h>
 //@type define I2C type
-typedef MicroBitI2C SentryI2C;
+#define SentryI2C MicroBitI2C
 
 // if u want to use software wire in arduino, change include and MuVsI2C type here
 //#include <SoftwareWire.h>

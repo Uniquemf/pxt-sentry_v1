@@ -18,9 +18,9 @@
 #include "pxt.h"
 
 #if MICROBIT_CODAL
-typedef NRF52Serial Stream;
+#define Stream NRF52Serial
 #else
-typedef MicroBitSerial Stream;
+#define Stream MicroBitSerial
 #endif
 
 #endif /* HW_STREAM_H_ */
