@@ -38,7 +38,7 @@ namespace Pxt_Sentry {
     //% blockId=Sentry_begin block="initialize%id|port%port"
     //% group="Settings"
     export function Sentrybegin(id: SentryId, port: sentry_mode_e) {
-        Sentry.begin(id,port);
+        Pxt_Sentry.begin(id,port);
     }
 
     /**
