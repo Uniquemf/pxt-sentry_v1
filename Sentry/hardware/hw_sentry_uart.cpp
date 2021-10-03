@@ -9,11 +9,11 @@ HwSentryUart::~HwSentryUart() {
 }
 
 size_t HwSentryUart::available(void) {
-  return hw_port_->available();
+  return hw_port_->isReadable();
 }
 
 size_t HwSentryUart::read(uint8_t* buf, size_t length) {
-  size_t ret = hw_port_->readBytes(buf, length);
+  size_t ret = hw_port_->read(buf, length);
 #if SENTRY_DEBUG_ENABLE && LOG_OUTPUT
   for (unsigned int i = 0; i < ret; ++i) {
     printf("0x%02x,", buf[i]);
@@ -28,6 +28,6 @@ size_t HwSentryUart::write(uint8_t* buf, size_t length) {
     printf("%02x,", buf[i]);
   }
 #endif
-  return hw_port_->write(buf, length);
+  return hw_port_->send(buf, length);
 }
 

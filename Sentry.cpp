@@ -42,7 +42,7 @@ namespace sentry {
      * Reset Sentry.
      */
     void setDefault(SentryId id){
-        while(pSentry[id]->SensorSetDefault()!=Sentry_OK);
+        while(pSentry[id]->SensorSetDefault()!=SENTRY_OK);
     }
 
     /**
@@ -50,7 +50,7 @@ namespace sentry {
      */
     void visionBegin(SentryId id, SentryStatus status, sentry_vision_e type){
         if (status) {
-            while(pSentry[id]->VisionBegin(type)!=Sentry_OK);
+            while(pSentry[id]->VisionBegin(type)!=SENTRY_OK);
         } else {
             pSentry[id]->VisionEnd(type);
         }
@@ -65,11 +65,11 @@ namespace sentry {
      */
     void ledSetColor(SentryId id, sentry_led_e led, sentry_led_color_e detected_color, sentry_led_color_e undetected_color) {
         if (detected_color == undetected_color) {
-            while(pSentry[id]->LedSetMode(led, 1, 1) != Sentry_OK);
+            while(pSentry[id]->LedSetMode(led, 1, 1) != SENTRY_OK);
         } else {
-            while(pSentry[id]->LedSetMode(led, 0, 0) != Sentry_OK);
+            while(pSentry[id]->LedSetMode(led, 0, 0) != SENTRY_OK);
         }
-        while(pSentry[id]->LedSetColor(led, detected_color, undetected_color, 1) != Sentry_OK);
+        while(pSentry[id]->LedSetColor(led, detected_color, undetected_color, 1) != SENTRY_OK);
     }
     /**
      * set camera zoom.
@@ -77,7 +77,7 @@ namespace sentry {
      * @param zoom zoom value.
      */
     void cameraSetZoom(SentryId id, sentry_camera_zoom_e zoom) {
-        while(pSentry[id]->CameraSetZoom(zoom) != Sentry_OK);
+        while(pSentry[id]->CameraSetZoom(zoom) != SENTRY_OK);
     }
 
     /**
@@ -86,7 +86,7 @@ namespace sentry {
      * @param wb white balance type.
      */
     void cameraSetAwb(SentryId id, sentry_camera_white_balance_e wb) {
-        while(pSentry[id]->CameraSetAwb(wb) != Sentry_OK);
+        while(pSentry[id]->CameraSetAwb(wb) != SENTRY_OK);
     }
     /**
      * set camera FPS.
@@ -94,7 +94,7 @@ namespace sentry {
      * @param on FPS type.
      */
     void cameraSetFPS(SentryId id, bool on) {
-        while(pSentry[id]->CameraSetFPS(SentryVsCameraFPS(on)) != Sentry_OK);
+        while(pSentry[id]->CameraSetFPS(SentryVsCameraFPS(on)) != SENTRY_OK);
     }
 
     /**
