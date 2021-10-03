@@ -32,6 +32,11 @@ enum sentry_mode_e {
 
 //% color="#ff6600" weight=20 icon="\uf085"
 namespace Pxt_Sentry {
+
+    function begin(id: boolean, port: string){
+
+    }
+
     /**
  * Initialize Sentry.
  */
