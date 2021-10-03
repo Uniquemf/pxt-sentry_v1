@@ -33,15 +33,6 @@
     }
 
 
-    declare const enum sentry_mode_e
-    {
-    //% block="SerialMode"
-    kSerialMode = 0,
-    //% block="I2CMode"
-    kI2CMode = 1,
-    }
-
-
     declare const enum sentry_baudrate_e
     {
     //% block="9600"

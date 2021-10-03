@@ -153,13 +153,12 @@ extern "C"
     kLedAll,
   };
 
-  enum sentry_mode_e
+  typedef enum 
   {
-    //% block="SerialMode"
     kSerialMode,
-    //% block="I2CMode"
     kI2CMode,
-  };
+    kUnknownMode
+  }sentry_mode_e;
 
   enum sentry_baudrate_e
   {

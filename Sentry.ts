@@ -23,6 +23,13 @@ enum sentry_vision_e {
     kVisionMotionDetect = 11
 }
 
+enum sentry_mode_e {
+    //% block="SerialMode"
+    kSerialMode,
+    //% block="I2CMode"
+    kI2CMode
+}
+
 //% color="#ff6600" weight=20 icon="\uf085"
 namespace Sentry {
     /**
