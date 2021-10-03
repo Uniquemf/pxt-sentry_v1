@@ -7,6 +7,11 @@
     },
     "files": [
         "README.md",
+        "Sentry/hardware/Stream.h",
+        "Sentry/hardware/hw_sentry_i2c.cpp",
+        "Sentry/hardware/hw_sentry_i2c.h",
+        "Sentry/hardware/hw_sentry_uart.cpp",
+        "Sentry/hardware/hw_sentry_uart.h",
         "Sentry/sentry_i2c.cpp",
         "Sentry/sentry_i2c.h",
         "Sentry/sentry_uart.cpp",
