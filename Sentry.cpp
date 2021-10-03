@@ -21,7 +21,7 @@ enum SentryStatus {
     Eisable=0
 };
 
-namespace sentry {
+namespace Sentry {
 
     /**
      * Initialize Sentry.
