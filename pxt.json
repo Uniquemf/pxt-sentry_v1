@@ -7,8 +7,18 @@
     },
     "files": [
         "README.md",
+        "Sentry/sentry_i2c.cpp",
+        "Sentry/sentry_i2c.h",
+        "Sentry/sentry_uart.cpp",
+        "Sentry/sentry_uart.h",
+        "Sentry/sentry_stream_base.h",
+        "Sentry/sentry_type.h",
+        "Sentry/Sentry.cpp",
+        "Sentry/Sentry.h",
         "Sentry.cpp",
-        "Sentry.ts"
+        "Sentry.ts",
+        "shims.d.ts",
+        "enums.d.ts"
     ],
     "testFiles": [
         "test.ts"
