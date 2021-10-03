@@ -1,4 +1,4 @@
-#include "debug/debug_tool.h"
+#include "../debug/debug_tool.h"
 #include "hw_sentry_uart.h"
 
 HwSentryUart::HwSentryUart(hw_uart_t hw_port)

@@ -1,6 +1,6 @@
 #include "hw_sentry_i2c.h"
-#include "debug/debug_tool.h"
-#include "sentry_type.h"
+#include "../debug/debug_tool.h"
+#include "../sentry_type.h"
 
 #if MICROBIT_CODAL
 #define BUFFER_TYPE uint8_t*
