@@ -31,7 +31,7 @@ enum sentry_mode_e {
 }
 
 //% color="#ff6600" weight=20 icon="\uf085"
-namespace Sentry {
+namespace Pxt_Sentry {
     /**
  * Initialize Sentry.
  */
