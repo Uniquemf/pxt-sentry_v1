@@ -72,6 +72,8 @@ extern "C"
     kVisionMotionDetect = 11
   } ;
 
+#definde kVisionMaxType 12
+
   enum sentry_led_color_e
   {
     //% block="off"
