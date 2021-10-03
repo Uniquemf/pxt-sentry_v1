@@ -1,5 +1,4 @@
 #include "hw_sentry_i2c.h"
-#include <Arduino.h>
 #include "debug/debug_tool.h"
 #include "sentry_type.h"
 
