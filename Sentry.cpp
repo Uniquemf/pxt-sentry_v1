@@ -26,7 +26,7 @@ namespace Sentry {
     /**
      * Initialize Sentry.
      */
-
+    //% blockId=begin
     void begin(SentryId id, sentry_mode_e port) {
         if (!pSentry[id]) {
             pSentry[id] = new Sentry(0x60+id);
@@ -41,6 +41,7 @@ namespace Sentry {
     /**
      * Reset Sentry.
      */
+     //% blockId=SensorSetDefault
     void setDefault(SentryId id){
         while(pSentry[id]->SensorSetDefault()!=SENTRY_OK);
     }
@@ -48,6 +49,7 @@ namespace Sentry {
     /**
      * Sentry vision begin.
      */
+     //% blockId=visionBegin
     void visionBegin(SentryId id, SentryStatus status, sentry_vision_e type){
         if (status) {
             while(pSentry[id]->VisionBegin(type)!=SENTRY_OK);
@@ -63,6 +65,7 @@ namespace Sentry {
      * @param detected_color led color while sensor detected target.
      * @param undetected_color led color while sensor undetected target.
      */
+     //% blockId=ledSetColor
     void ledSetColor(SentryId id, sentry_led_e led, sentry_led_color_e detected_color, sentry_led_color_e undetected_color) {
         if (detected_color == undetected_color) {
             while(pSentry[id]->LedSetMode(led, 1, 1) != SENTRY_OK);
@@ -76,6 +79,7 @@ namespace Sentry {
      * @param id Sentry id
      * @param zoom zoom value.
      */
+     //% blockId=cameraSetZoom
     void cameraSetZoom(SentryId id, sentry_camera_zoom_e zoom) {
         while(pSentry[id]->CameraSetZoom(zoom) != SENTRY_OK);
     }
@@ -85,6 +89,7 @@ namespace Sentry {
      * @param id Sentry id
      * @param wb white balance type.
      */
+     //% blockId=cameraSetAwb
     void cameraSetAwb(SentryId id, sentry_camera_white_balance_e wb) {
         while(pSentry[id]->CameraSetAwb(wb) != SENTRY_OK);
     }
@@ -93,6 +98,7 @@ namespace Sentry {
      * @param id Sentry id
      * @param on FPS type.
      */
+     //% blockId=cameraSetFPS
     void cameraSetFPS(SentryId id, bool on) {
         while(pSentry[id]->CameraSetFPS(sentry_camera_fps_e(on)) != SENTRY_OK);
     }
@@ -103,6 +109,7 @@ namespace Sentry {
      * @param vision_type: vision type.
      * @param object_inf:  object information
     */
+    //% blockId=getValue
     int getValue(SentryId id, sentry_vision_e vision_type, sentry_obj_info_e object_inf) {
         return pSentry[id]->GetValue(vision_type, object_inf);
     }

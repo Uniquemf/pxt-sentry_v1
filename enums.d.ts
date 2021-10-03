@@ -1,33 +1,6 @@
 // Auto-generated. Do not edit.
 
 
-    declare const enum sentry_vision_e
-    {
-    //% block="Color"
-    kVisionColor = 1,
-    //% block="Blob"
-    kVisionBlob = 2,
-    //% block="AprilTag"
-    kVisionAprilTag = 3,
-    //% block="Line"
-    kVisionLine = 4,
-    //% block="Body"
-    kVisionBody = 5,
-    //% block="Card"
-    kVisionCard = 6,
-    //% block="Face"
-    kVisionFace = 7,
-    //% block="20Classes"
-    kVision20Classes = 8,
-    //% block="QrCode"
-    kVisionQrCode = 9,
-    //% block="ObjTrack"
-    kVisionObjTrack = 10,
-    //% block="MotionDetect"
-    kVisionMotionDetect = 11,
-    }
-
-
     declare const enum sentry_led_color_e
     {
     //% block="off"

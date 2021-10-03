@@ -46,33 +46,21 @@ extern "C"
 #define SENTRY_UNSUPPORT_PARAM 0x10
 #define SENTRY_UNKNOWN_PROTOCOL 0x11
 
-  enum sentry_vision_e
+  typedef enum 
   {
-    //% block="Color"
     kVisionColor = 1,
-    //% block="Blob"
     kVisionBlob = 2,
-    //% block="AprilTag"
     kVisionAprilTag = 3,
-    //% block="Line"
     kVisionLine = 4,
-    //% block="Body"
     kVisionBody = 5,
-    //% block="Card"
     kVisionCard = 6,
-    //% block="Face"
     kVisionFace = 7,
-    //% block="20Classes"
     kVision20Classes = 8,
-    //% block="QrCode"
     kVisionQrCode = 9,
-    //% block="ObjTrack"
     kVisionObjTrack = 10,
-    //% block="MotionDetect"
-    kVisionMotionDetect = 11
-  } ;
-
-#definde kVisionMaxType 12
+    kVisionMotionDetect = 11,
+    kVisionMaxType
+  } sentry_vision_e;
 
   enum sentry_led_color_e
   {
