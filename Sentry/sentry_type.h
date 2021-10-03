@@ -69,8 +69,7 @@ extern "C"
     //% block="ObjTrack"
     kVisionObjTrack = 10,
     //% block="MotionDetect"
-    kVisionMotionDetect = 11,
-    kVisionMaxType,
+    kVisionMotionDetect = 11
   } ;
 
   enum sentry_led_color_e
@@ -170,7 +169,6 @@ extern "C"
     kSerialMode,
     //% block="I2CMode"
     kI2CMode,
-    kUnknownMode,
   };
 
   enum sentry_baudrate_e

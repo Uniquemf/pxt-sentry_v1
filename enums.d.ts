@@ -25,7 +25,6 @@
     kVisionObjTrack = 10,
     //% block="MotionDetect"
     kVisionMotionDetect = 11,
-    kVisionMaxType = 12,
     }
 
 
@@ -67,7 +66,6 @@
     kSerialMode = 0,
     //% block="I2CMode"
     kI2CMode = 1,
-    kUnknownMode = 2,
     }
 
 

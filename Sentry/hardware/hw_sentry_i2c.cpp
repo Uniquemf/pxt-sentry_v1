@@ -15,7 +15,6 @@ HwSentryI2C::HwSentryI2C(hw_i2c_t* i2c_port, uint32_t address)
 HwSentryI2C::~HwSentryI2C() {}
 
 uint32_t HwSentryI2C::I2CRead(uint8_t reg_address, uint8_t* temp) {
-  uint8_t ret = SENTRY_OK;
   if (i2c_port_->write(sentry_address_<<1, (BUFFER_TYPE)&reg_address, 1) != MICROBIT_OK)
     return SENTRY_FAIL;
   //Debug Output
@@ -38,5 +37,8 @@ uint32_t HwSentryI2C::I2CWrite(uint8_t reg_address, uint8_t value) {
 #if SENTRY_DEBUG_ENABLE && LOG_OUTPUT
   printf("[W:%02x,%02x],",reg_address,value);
 #endif
+    if (ret != MICROBIT_OK)
+      return SENTRY_FAIL;
+      
   return SENTRY_OK;
 }
