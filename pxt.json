@@ -26,7 +26,7 @@
         "Sentry/sentry_type.h",
         "Sentry/Sentry.cpp",
         "Sentry/Sentry.h",
-        "Sentry.cpp",
+        "sentry.cpp",
         "Sentry.ts",
         "enums.d.ts"
     ],
