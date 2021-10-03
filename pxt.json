@@ -28,7 +28,6 @@
         "Sentry/Sentry.h",
         "Sentry.cpp",
         "Sentry.ts",
-        "shims.d.ts",
         "enums.d.ts"
     ],
     "testFiles": [
