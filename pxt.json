@@ -6,7 +6,9 @@
         "microphone": "*"
     },
     "files": [
-        "README.md"
+        "README.md",
+        "Sentry.cpp",
+        "Sentry.ts"
     ],
     "testFiles": [
         "test.ts"
