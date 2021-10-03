@@ -94,7 +94,7 @@ namespace sentry {
      * @param on FPS type.
      */
     void cameraSetFPS(SentryId id, bool on) {
-        while(pSentry[id]->CameraSetFPS(SentryVsCameraFPS(on)) != SENTRY_OK);
+        while(pSentry[id]->CameraSetFPS(sentry_camera_fps_e(on)) != SENTRY_OK);
     }
 
     /**
