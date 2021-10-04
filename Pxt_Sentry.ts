@@ -32,18 +32,20 @@ enum sentry_mode_e {
 
 //% color="#ff6600" weight=20 icon="\uf085"
 namespace Pxt_Sentry {
-
-    function begin(id: boolean, port: string){
-
-    }
-
     /**
  * Initialize Sentry.
  */
+    class msentry{
+        static begin(id: SentryId, port: sentry_mode_e)
+        {
+            Pxt_Sentry.begin(id, port);
+        }
+    }
+
     //% blockId=Sentry_begin block="initialize%id|port%port"
     //% group="Settings"
     export function Sentrybegin(id: SentryId, port: sentry_mode_e) {
-        Pxt_Sentry.begin(id,port);
+        msentry.begin(id,port);
     }
 
     /**
